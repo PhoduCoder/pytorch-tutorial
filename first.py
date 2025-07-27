@@ -1,4 +1,5 @@
 import torch
+import numpy as np
 
 def describe(x):
   print ("The type of tensor is", x.dtype)
@@ -27,7 +28,15 @@ def main():
   print ("========")
   c = b.fill_(8)
   describe(c)
-
+  print ("========")
+  d = torch.Tensor([[1,2],[3,4]])
+  describe(d)
+  print ("========")
+  print("Now converting numPy arrays to tensor")
+  npy = np.random.rand(2,3)
+  e = torch.from_numpy(npy)
+  describe(e)
+  print("========")
 
 if __name__ == "__main__":
   main() 
