@@ -22,3 +22,7 @@ Note that below we are using torch.tensor, small type which is a factory functio
 loop over the above, till you win .
 
 Finally with the bets that made you win, do other gamble 
+
+## Maths behind Neural Network - Universal Approximation Theorem
+
+##Also the perceptron convergence theorem - which can be considered as a prelude to the above 
