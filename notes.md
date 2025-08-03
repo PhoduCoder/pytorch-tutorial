@@ -18,3 +18,14 @@ Note that below we are using torch.tensor, small type which is a factory functio
 ===============TENSOR OPERATIONS NOTES========
 
 
+## Essential core philosphy of Machine learning is below 
+
+[ Gamble -> Reflect on outcome -> Adjust your bets ]
+
+loop over the above, till you win .
+
+Finally with the bets that made you win, do other gamble 
+
+## Maths behind Neural Network - Universal Approximation Theorem
+
+##Also the perceptron convergence theorem - which can be considered as a prelude to the above 
