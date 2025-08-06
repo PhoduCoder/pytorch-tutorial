@@ -77,7 +77,7 @@ Loss (Classification) = -(ylog(y')+(1-y)log(1-y'))
 Cost function is average of losses for all samples, i.e. we calculate the losses 
 for each sample and then average over the losses
 
-Sometimes, averaging may not be a great idea especially when we have a sensitive datasets
+Sometimes, averaging may not be a great idea especially when we have a sensitive datasets[sample variability]
 i.e. many outliers in that loss sample may hide that effect
 
 For that reason, you will see losses to be calculated in batches of samples
