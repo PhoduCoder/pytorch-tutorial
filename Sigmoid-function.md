@@ -9,118 +9,15 @@ The answer is sigmoid function
 f(x) = 1/(1+e^-x)
 
 If x is large and positive, e^-x becomes close to 0, so f(x) ~=1
-If x is small 
+If x is large and negative, e^-x becomes >>1, so f(x) ~=0
+If x=0, then f(x)=0.5
 
-```
-If 
-𝑥
-x is large and positive → 
-𝑒
-−
-𝑥
-≈
-0
-e 
-−x
- ≈0 → 
-𝜎
-(
-𝑥
-)
-≈
-1
-σ(x)≈1
-If 
-𝑥
-=
-0
-x=0 → 
-𝑒
-−
-𝑥
-=
-1
-e 
-−x
- =1 → 
-𝜎
-(
-0
-)
-=
-0.5
-σ(0)=0.5
-If 
-𝑥
-x is large and negative → 
-𝑒
-−
-𝑥
-≫
-1
-e 
-−x
- ≫1 → 
-𝜎
-(
-𝑥
-)
-≈
-0
-σ(x)≈0If 
-𝑥
-x is large and positive → 
-𝑒
-−
-𝑥
-≈
-0
-e 
-−x
- ≈0 → 
-𝜎
-(
-𝑥
-)
-≈
-1
-σ(x)≈1
-If 
-𝑥
-=
-0
-x=0 → 
-𝑒
-−
-𝑥
-=
-1
-e 
-−x
- =1 → 
-𝜎
-(
-0
-)
-=
-0.5
-σ(0)=0.5
-If 
-𝑥
-x is large and negative → 
-𝑒
-−
-𝑥
-≫
-1
-e 
-−x
- ≫1 → 
-𝜎
-(
-𝑥
-)
-≈
-0
-σ(x)≈0
-```
+This gives the classic S-curve, where small/large values asymptotically approach 0 and 1 but never reach them.
+
+In binary classification (e.g., spam vs. not spam), the model outputs a real number (logit). But we want a probability — a value between 0 and 1 that says how likely a sample belongs to class 1.
+
+The sigmoid converts the logit (raw model score) to a probability:
+
+If f(x)=0.9, high confidence it's class 1.
+If f(x)=0.1, high confidence it's class 0.
+If f(x)=0.5, model is unsure
