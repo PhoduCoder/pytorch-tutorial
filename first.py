@@ -14,10 +14,12 @@ def main():
   x = torch.Tensor(2,3) #Declare a tensor with zero values, note that default type is float32
   describe(x)
   print ("============")
-  y = torch.rand(2,3) #Uniform distribution
+  y = torch.rand(2,3) #Uniform distribution in [0,1). All outcomes equally likely 
   describe(y) 
   print ("============")
-  z = torch.randn(2,3) #Random distribution
+  z = torch.randn(2,3) #Normal distribution with mean 0 and standard deviation as 1, sd-> how spread out values are 
+  #Normal distribution above would result in a bell curve, i.e. most values are near mean, i.e. 0, while
+  #some values are at extremes
   describe(z)
   print ("==============")
   a = torch.zeros(2,3) #Initialize tensor with all zeroes
