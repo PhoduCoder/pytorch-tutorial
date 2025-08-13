@@ -20,6 +20,12 @@ def main():
   z = torch.randn(2,3) #Normal distribution with mean 0 and standard deviation as 1, sd-> how spread out values are 
   #Normal distribution above would result in a bell curve, i.e. most values are near mean, i.e. 0, while
   #some values are at extremes
+#   it's called the 68-95-99.7 rule (empirical rule) for normal distributions:
+# ~68% within ±1σ
+# ~95% within ±2σ
+# ~99.7% within ±3σ
+
+# So seeing data up to about 3 times the standard deviation is normal.
   describe(z)
   print ("==============")
   a = torch.zeros(2,3) #Initialize tensor with all zeroes
